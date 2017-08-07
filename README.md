@@ -1,6 +1,8 @@
 # Running karma unit tests in Google Chrome inside Docker
 
-This is a code example project for a Medium story about Docker/Karma/Chrome.
+This is a code example project for a Medium story about Docker/Karma/Chrome:
+
+[Running Karma tests with Headless Chrome inside Docker](https://medium.com/@eiriksletteberg/running-karma-tests-with-headless-chrome-inside-docker-ae4aceb06ed3)
 
 The example code runs karma tests, and also has
 a "mock" bundle step, which just creates a result.txt file.
