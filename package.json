@@ -1,0 +1,25 @@
+{
+  "name": "chrome-karma-docker",
+  "version": "1.0.0",
+  "author": "Eirik Sletteberg",
+  "license": "(Beerware OR Unlicense OR WTFPL)",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "is-docker": "^1.1.0",
+    "karma": "^1.7.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.3",
+    "mocha": "^3.5.0"
+  },
+  "scripts": {
+    "clean": "rm -rf build",
+    "prepare": "mkdir -p build",
+    "test": "karma start --browsers ChromeCustom --reporters mocha",
+    "test:prod": "karma start --browsers ChromeCustom --single-run --reporters mocha,junit",
+    "build-artifact": "echo OK > build/result.txt",
+    "build": "yarn && yarn run clean && yarn run prepare && yarn run test:prod && yarn run build-artifact"
+  }
+}
