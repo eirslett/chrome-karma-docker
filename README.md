@@ -22,13 +22,13 @@ This assumes that you have node.js/npm/yarn installed.
 This assumes that you have Docker and Docker Compose installed.
 
 - `docker-compose build` (setup environment, install dependencies)
-- `docker-compose run dev yarn test` (run tests)
-- `docker-compose run dev yarn build` (run the whole build)
+- `docker-compose run --rm dev yarn test` (run tests)
+- `docker-compose run --rm dev yarn build` (run the whole build)
 
 ## Running on CI
 
 - `docker-compose build` (builds the container)
-- `docker-compose run dev yarn build` (run the whole build)
+- `docker-compose run --rm dev yarn build` (run the whole build)
 
 #### License for the sample source code
 
